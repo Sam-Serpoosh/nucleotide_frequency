@@ -10,7 +10,6 @@ public class NucleotideFrequency {
 
   static class NucleotideFrequencyMapper extends 
     Mapper <LongWritable, Text, Text, IntWritable> {
-      private static final int ONE = 1;
       private static final String ADENINE  = "A";
       private static final String THYMINE  = "T";
       private static final String CYTOSINE = "C";
