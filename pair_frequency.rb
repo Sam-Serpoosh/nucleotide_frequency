@@ -1,14 +1,16 @@
 class PairFrequencyCalculator
-  AT = 16546616
-  CG = 2252133
-  TOTAL_PAIRS = (AT + CG).to_f
+  A = 65570891
+  C = 47024414
+  G = 47016563
+  T = 65668756
+  TOTAL_PAIRS = (A + T + C + G).to_f
 
   def frequency_of_at
-    (AT / TOTAL_PAIRS * 100).round(3)
+    ((A + T) / TOTAL_PAIRS * 100).round(3)
   end
 
   def frequency_of_cg
-    (CG / TOTAL_PAIRS * 100).round(3)
+    ((C + G)/ TOTAL_PAIRS * 100).round(3)
   end
 end
 
